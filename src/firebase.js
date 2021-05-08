@@ -1,3 +1,5 @@
+import firebase from 'firebase';
+
 const firebaseConfig = {
     apiKey: "AIzaSyCysrr7muvEOzdl8oA_SOTuZ_YeibaYZik",
   authDomain: "vidtube-007.firebaseapp.com",
@@ -7,3 +9,7 @@ const firebaseConfig = {
   appId: "1:895490316994:web:9aaff84cbe5c40c161f95b",
   measurementId: "G-E4FEEE1K7S"
 }
+
+const db = firebase.firestore();
+
+export {db};
